@@ -2,7 +2,7 @@
 The objective of this paper is to classify the positive and negative reviews of the customers over different products and build a supervised learning model to polarize large amounts of reviews.
 
 ## Task Assigned by Technocolabs 
-![Technocolabs](https://i.postimg.cc/Ls0bsz61/logo1.png)
+<img src="https://i.postimg.cc/Ls0bsz61/logo1.png" height="200" width="100">
 
 ## Check the working of the application here
 
