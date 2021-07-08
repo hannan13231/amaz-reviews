@@ -6,7 +6,7 @@ The objective of this paper is to classify the positive and negative reviews of 
 
 ## Check the working of the application here
 
-<a href="https://amaz-reviews.herokuapp.com/">Click here</a>
+<a href="https://amaz-review.herokuapp.com/">Click here</a>
 
 ## Dataset used 
 
