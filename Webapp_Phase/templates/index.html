@@ -1,0 +1,32 @@
+<!-- This is GUI for Sentiment Analysis Application Using Machine Learning Classifer -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Amaz-Reviews
+	</title>
+	<link rel="shortcut icon" href="static/images/amazon_head.png" type="image/x-icon">  
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body style="background-color:#DADED4;">
+<div class="container">
+<center>
+	<p>&nbsp;</p>
+	<img class="center" src="static/images/amazon.gif" alt="" width="380" height="250">
+	<p>&nbsp;</p>
+	<h3 style="font-family: times, serif; font-size:40pt;">Amazon Review Analysis</h3>
+	<p>&nbsp;</p>
+<div class="button_cont" align="center" style="padding: 10px; width: 30%;">
+<form class=" m-auto" action="{{url_for('sentiment')}} ">
+<button type="submit" class="btn btn-warning btn-block btn-lg"><strong>Sentiment Analysis &raquo;</a></strong></button>
+</form>
+<p>&nbsp;</p>
+<form class=" m-auto" action="{{url_for('visualization')}}">
+<button type="submit" class="btn btn-warning btn-block btn-lg"><strong>Visualization &raquo;</a></strong></button>
+</form>
+<p>&nbsp;</p>
+</form>
+</div>
+</body>
+</html>

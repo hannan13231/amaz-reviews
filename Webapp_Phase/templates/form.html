@@ -1,0 +1,62 @@
+<!-- This is GUI for Sentiment Analysis Application Using Machine Learning Classifer -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Amaz-Reviews
+	</title>
+	<link rel="shortcut icon" href="static/images/amazon_head.png" type="image/x-icon">  
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body style="background-color:#DADED4;">
+<div class="container">
+
+	<p>&nbsp;</p>	
+	<form class=" m-auto" action="{{url_for('predict')}} "method="post">
+        <center>
+        <h3 style="font-family: times, serif; font-size:40pt;">Sentiment analysis on Reviews</h3>
+	<br>
+        </center>
+        <div class="form-group">
+	<center>
+	<table style="padding: 10px; width: 40%">
+            <tr>
+		<td style="padding: 10px; width: 40%; font-family: times, serif; font-size:20pt;"><label>Review Text:</label>
+		<input class="form-control" type="text" name="text" placeholder=" " required="required"></td>
+	    </tr>
+	    <tr>
+		<td style="padding: 10px; width: 40%; font-family: times, serif; font-size:20pt;"><label>Review Rating (In between 0 to 5):</label>
+        	<input class="form-control" type="text" name="rating" placeholder=" " required="required"></td>
+            </tr>
+	</table>
+	</center>
+        </div>  
+        <!-- Show button -->
+	<center>
+        <div class="button_cont" align="center" style="padding: 10px; width: 30%;">
+	<a class="button_css" href="https://github.com/hannan13231/amaz-reviews.git" target="_blank" rel="nofollow noopener">
+            <button type="submit" class="btn btn-warning btn-block btn-lg"><strong>Sentiment ?</strong></button>
+	</a>
+	</div>
+	</form> 
+	</center>
+	<center>
+	<p>&nbsp;</p>
+	<h2><u>{{prediction_text}}</u></h2>
+	<p>&nbsp;</p>
+	<div class="button_cont" align="center" style="padding: 10px; width: 30%;">
+	<form class=" m-auto" action="{{url_for('home')}} ">
+	<button type="submit" class="btn btn-warning btn-block btn-lg"><strong>&laquo; Back to Home</a></strong></button>
+	</form>
+	</div>
+	<p>&nbsp;</p>
+	</center>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
